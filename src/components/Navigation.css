@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 42px 8px 42px;
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 26px;
+  font-weight: 600;
+  transform: scale(0.9);
+}
+
+.button img {
+  transform: scale(0.9);
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 64px;
+}
