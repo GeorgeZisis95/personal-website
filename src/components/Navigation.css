@@ -18,13 +18,13 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
-  transform: scale(0.9);
 }
 
-.button img {
-  transform: scale(0.9);
+.button svg {
+  width: 24px;
+  fill: var(--heading);
 }
 
 .nav-buttons {
