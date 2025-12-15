@@ -1,0 +1,10 @@
+.pink-button {
+  background-color: var(--tertiary);
+  padding: 8px 16px;
+  border-radius: 16px;
+  transition: opacity 0.2s ease;
+}
+
+.pink-button:hover {
+  opacity: 80%;
+}

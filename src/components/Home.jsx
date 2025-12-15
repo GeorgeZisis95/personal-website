@@ -1,3 +1,4 @@
+import Button from "./Button";
 import "./Home.css";
 
 export default function Home() {
@@ -12,6 +13,20 @@ export default function Home() {
         Based in Greece, I create clean, engaging websites designed for optimal
         user experiences
       </h3>
+      <div className="buttons">
+        <button className="learn-more">
+          <h3>
+            <span style={{ color: "var(--heading)" }}>Learn More...</span>
+          </h3>
+        </button>
+        <Button
+          text={
+            <h3>
+              <span style={{ color: "var(--primary)" }}>My Projects</span>
+            </h3>
+          }
+        />
+      </div>
     </div>
   );
 }

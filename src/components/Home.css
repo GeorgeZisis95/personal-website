@@ -5,5 +5,23 @@
   align-items: center;
   gap: 16px;
   text-align: center;
-  padding: 20vh 5vw 50vh 5vw;
+  padding: 20vh 4vw 50vh 6vw;
+}
+
+.learn-more {
+  border: 1px solid var(--accent);
+  padding: 8px 16px;
+  border-radius: 16px;
+  transition: border 0.2s ease-in;
+}
+
+.learn-more:hover {
+  border: 1px solid var(--tertiary);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
