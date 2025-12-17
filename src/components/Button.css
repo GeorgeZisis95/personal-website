@@ -1,10 +1,14 @@
 .pink-button {
-  background-color: var(--tertiary);
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid var(--tertiary);
   padding: 8px 16px;
   border-radius: 16px;
-  transition: opacity 0.2s ease;
+  transition: all 0.2s ease-in-out;
 }
 
 .pink-button:hover {
-  opacity: 80%;
+  background-color: inherit;
+  border: 1px solid var(--accent);
+  color: var(--heading);
 }

@@ -1,5 +1,5 @@
 import "./About.css";
-import knightImg from "../assets/knight.png";
+import hipsterImg from "../assets/hipster.png";
 
 export default function About() {
   return (
@@ -30,7 +30,7 @@ export default function About() {
         places to relax. These activities keep me curious, connected, and
         inspired.
       </p>
-      <img src={knightImg} alt="knightImg" />
+      <img src={hipsterImg} alt="knightImg" />
     </section>
   );
 }

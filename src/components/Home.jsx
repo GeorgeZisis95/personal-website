@@ -14,16 +14,8 @@ export default function Home() {
         user experiences
       </p>
       <div className="buttons">
-        <button className="learn-more">
-          <h3>Learn More...</h3>
-        </button>
-        <Button
-          text={
-            <h3>
-              <span style={{ color: "var(--primary)" }}>My Projects</span>
-            </h3>
-          }
-        />
+        <button className="learn-more">Learn More...</button>
+        <Button text={"My Projects"} />
       </div>
     </section>
   );

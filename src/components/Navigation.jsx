@@ -1,10 +1,18 @@
+import { useEffect, useState } from "react";
 import "./Navigation.css";
-// import homeImg from "../assets/home.svg";
-// import aboutImg from "../assets/about.svg";
-// import skillsImg from "../assets/skills.svg";
-// import projectImg from "../assets/projects.svg";
 
 export default function Navigation() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -12,9 +20,9 @@ export default function Navigation() {
     });
   };
   return (
-    <nav>
+    <nav className={scrolled ? "scrolled" : ""}>
       <a onClick={scrollToTop} className="logo">
-        <span style={{ color: "var(--heading)" }}>George </span>
+        <span>George </span>
         <span style={{ color: "var(--accent)" }}>Zisis</span>
       </a>
       <div className="nav-buttons">

@@ -5,7 +5,12 @@ nav {
   position: sticky;
   top: 0;
   background-color: var(--primary);
+  transition: box-shadow 0.3s;
   z-index: 100;
+}
+
+nav.scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -45,6 +50,10 @@ nav {
 .button svg {
   width: 24px;
   fill: var(--heading);
+}
+
+.button .active {
+  background-color: red;
 }
 
 .nav-buttons {
