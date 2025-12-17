@@ -1,7 +1,11 @@
-import Button from "./Button";
 import "./Home.css";
 
-export default function Home() {
+export default function Home({ aboutRef, projectsRef }) {
+  const scrollToAbout = () =>
+    aboutRef.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToProjects = () =>
+    projectsRef.current.scrollIntoView({ behavior: "smooth" });
+
   return (
     <section id="home" className="home">
       <p>Hey, I'm George👋</p>
@@ -14,8 +18,12 @@ export default function Home() {
         user experiences
       </p>
       <div className="buttons">
-        <button className="learn-more">Learn More...</button>
-        <Button text={"My Projects"} />
+        <button onClick={scrollToAbout} className="about-button">
+          Learn More...
+        </button>
+        <button onClick={scrollToProjects} className="projects-button">
+          My Projects
+        </button>
       </div>
     </section>
   );

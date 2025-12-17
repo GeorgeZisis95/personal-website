@@ -1,9 +1,9 @@
 import "./About.css";
 import hipsterImg from "../assets/hipster.png";
 
-export default function About() {
+export default function About({ aboutRef }) {
   return (
-    <section id="about" className="about">
+    <section ref={aboutRef} id="about" className="about">
       <h2>
         <span style={{ color: "var(--accent)" }}>About</span>
         <span>Me</span>

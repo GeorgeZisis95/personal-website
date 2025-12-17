@@ -34,10 +34,16 @@
   gap: 16px;
   background-color: var(--secondary);
   padding: 10% 5%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card span {
   font-size: 20px;
   font-weight: 600;
   color: var(--heading);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
