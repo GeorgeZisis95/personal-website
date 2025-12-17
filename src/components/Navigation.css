@@ -1,9 +1,10 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 42px 8px 42px;
+  padding: 0 4vw;
   position: sticky;
   top: 0;
+  flex: 0 0 1;
   background-color: var(--primary);
   transition: box-shadow 0.3s;
   z-index: 100;
@@ -47,22 +48,83 @@ nav.scrolled {
   width: 100%;
 }
 
-.button svg {
+.button img {
   width: 24px;
   fill: var(--heading);
-}
-
-.button .active {
-  background-color: red;
 }
 
 .nav-buttons {
   display: flex;
   gap: 64px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   nav {
+    min-height: 8vh;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 2vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
     display: none;
+    gap: 4px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-buttons {
+    gap: 14vw;
+  }
+
+  .nav-buttons h3 {
+    display: none;
+  }
+
+  .button::after {
+    display: none;
+  }
+
+  .button img {
+    width: 24px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+  nav {
+    padding: 0 3vw;
+  }
+  .logo {
+    gap: 8px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-buttons {
+    gap: 32px;
+  }
+
+  .button {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .button img {
+    width: 20px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .logo {
+    font-size: 48px;
+  }
+
+  .button img {
+    width: 32px;
   }
 }

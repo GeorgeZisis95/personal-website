@@ -112,3 +112,9 @@ a {
 section {
   scroll-margin-top: 80px;
 }
+
+@media (max-width: 480px) {
+  section {
+    scroll-margin-top: 10px;
+  }
+}
