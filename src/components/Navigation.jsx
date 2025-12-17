@@ -22,7 +22,7 @@ export default function Navigation() {
   return (
     <nav className={scrolled ? "scrolled" : ""}>
       <a onClick={scrollToTop} className="logo">
-        <span>George </span>
+        <span style={{ color: "var(--heading)" }}>George </span>
         <span style={{ color: "var(--accent)" }}>Zisis</span>
       </a>
       <div className="nav-buttons">
@@ -68,7 +68,7 @@ function Button({ img, text }) {
   return (
     <a href={id} className="button">
       {img}
-      <span>
+      <span style={{ color: "var(--heading)" }}>
         <h3>{text}</h3>
       </span>
     </a>

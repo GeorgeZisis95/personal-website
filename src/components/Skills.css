@@ -2,27 +2,12 @@
   background-color: var(--primary);
   padding: 10vh 0 10vh 4vw;
 }
-.skills h2 {
-  position: relative;
-  display: flex;
-  gap: 8px;
-}
-
-.skills h2::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 170px;
-  width: 300px;
-  height: 4px;
-  background-color: var(--accent);
-}
 
 .skills-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: auto;
-  gap: 32px;
+  gap: 24px;
   padding: 10vh 10vw 0 10vw;
 }
 
@@ -33,8 +18,12 @@
   align-items: center;
   gap: 16px;
   background-color: var(--secondary);
-  padding: 10% 5%;
+  padding: 8% 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 48px;
 }
 
 .card span {

@@ -24,7 +24,7 @@
   --secondary: #fff4e6;
   --tertiary: #08d9d6;
   --accent: #ff6f3c;
-  --heading: #322121;
+  --heading: #3d2525;
   --text: #635959;
 }
 
@@ -58,7 +58,42 @@ p {
   display: block;
   font-size: 18px;
   font-weight: 600;
-  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1920px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 32px;
+  }
 }
 
 button,

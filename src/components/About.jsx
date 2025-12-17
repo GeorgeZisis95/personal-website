@@ -4,11 +4,13 @@ import hipsterImg from "../assets/hipster.png";
 export default function About({ aboutRef }) {
   return (
     <section ref={aboutRef} id="about" className="about">
-      <h2>
-        <span style={{ color: "var(--accent)" }}>About</span>
-        <span>Me</span>
+      <h2 className="title">
+        <div>
+          <span style={{ color: "var(--accent)" }}>About&nbsp;</span>
+          <span>Me</span>
+        </div>
       </h2>
-      <p>
+      <p style={{ color: "var(--text)" }}>
         I’m a self-taught web developer with a strong focus on building clean,
         responsive, and user-friendly interfaces. I enjoy turning ideas into
         practical, functional digital experiences.

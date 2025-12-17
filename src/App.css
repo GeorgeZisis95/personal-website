@@ -1,0 +1,13 @@
+.title {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.title::after {
+  content: "";
+  flex-grow: 1;
+  height: 4px;
+  width: 20vw;
+  background-color: var(--accent);
+}

@@ -13,9 +13,11 @@ import vercelImg from "../assets/skills/vercel.svg";
 export default function Skills() {
   return (
     <section id="skills" className="skills">
-      <h2>
-        <span>My</span>
-        <span style={{ color: "var(--accent)" }}>Skills</span>
+      <h2 className="title">
+        <div>
+          <span>My&nbsp;</span>
+          <span style={{ color: "var(--accent)" }}>Skills</span>
+        </div>
       </h2>
       <div className="skills-container">
         <Card img={javascriptImg} text={"Javascript"} />

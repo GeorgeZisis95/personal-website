@@ -1,23 +1,7 @@
 .about {
   background-color: var(--secondary);
-  padding: 0 0 10vh 4vw;
+  padding: 0 0 5vh 4vw;
   position: relative;
-}
-
-.about h2 {
-  position: relative;
-  display: flex;
-  gap: 8px;
-}
-
-.about h2::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 190px;
-  width: 300px;
-  height: 4px;
-  background-color: var(--accent);
 }
 
 .about p {

@@ -60,3 +60,9 @@ nav.scrolled {
   display: flex;
   gap: 64px;
 }
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
