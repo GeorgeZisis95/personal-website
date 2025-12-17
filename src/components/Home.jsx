@@ -3,21 +3,19 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <div className="home">
-      <h3>Hey, I'm George👋</h3>
+    <section id="home" className="home">
+      <p>Hey, I'm George👋</p>
       <h1>
         <span style={{ color: "var(--accent)" }}>Front</span>
         <span>end Developer</span>
       </h1>
-      <h3>
+      <p>
         Based in Greece, I create clean, engaging websites designed for optimal
         user experiences
-      </h3>
+      </p>
       <div className="buttons">
         <button className="learn-more">
-          <h3>
-            <span style={{ color: "var(--heading)" }}>Learn More...</span>
-          </h3>
+          <h3>Learn More...</h3>
         </button>
         <Button
           text={
@@ -27,6 +25,6 @@ export default function Home() {
           }
         />
       </div>
-    </div>
+    </section>
   );
 }

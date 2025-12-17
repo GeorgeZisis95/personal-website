@@ -2,6 +2,10 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 0 42px 8px 42px;
+  position: sticky;
+  top: 0;
+  background-color: var(--primary);
+  z-index: 100;
 }
 
 .logo {

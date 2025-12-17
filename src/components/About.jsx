@@ -3,7 +3,7 @@ import knightImg from "../assets/knight.png";
 
 export default function About() {
   return (
-    <div className="about">
+    <section id="about" className="about">
       <h2>
         <span style={{ color: "var(--accent)" }}>About</span>
         <span>Me</span>
@@ -31,6 +31,6 @@ export default function About() {
         inspired.
       </p>
       <img src={knightImg} alt="knightImg" />
-    </div>
+    </section>
   );
 }

@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -19,7 +20,7 @@
 h1 {
   all: unset;
   display: block;
-  font-size: 74px;
+  font-size: 64px;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -27,22 +28,22 @@ h1 {
 h2 {
   all: unset;
   display: block;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 700;
 }
 
 h3 {
   all: unset;
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
-  color: var(--text);
+  color: var(--heading);
 }
 
 p {
   all: unset;
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--text);
 }

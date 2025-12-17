@@ -12,7 +12,7 @@ import vercelImg from "../assets/skills/vercel.svg";
 
 export default function Skills() {
   return (
-    <div className="skills">
+    <section id="skills" className="skills">
       <h2>
         <span>My</span>
         <span style={{ color: "var(--accent)" }}>Skills</span>
@@ -29,7 +29,7 @@ export default function Skills() {
         <Card img={webpackImg} text={"Webpack"} />
         <Card img={vercelImg} text={"Vercel"} />
       </div>
-    </div>
+    </section>
   );
 }
 

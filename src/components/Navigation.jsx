@@ -56,10 +56,13 @@ export default function Navigation() {
 }
 
 function Button({ img, text }) {
+  const id = `#${text.toLowerCase()}`;
   return (
-    <a className="button">
+    <a href={id} className="button">
       {img}
-      <span>{text}</span>
+      <span>
+        <h3>{text}</h3>
+      </span>
     </a>
   );
 }
