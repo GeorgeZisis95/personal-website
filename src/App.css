@@ -18,16 +18,24 @@ body {
 
 @media (max-width: 430px) {
   .title {
-    justify-content: center;
-    text-align: center;
+    width: 100%;
+    overflow: hidden;
   }
 
   .title::before,
   .title::after {
     content: "";
-    flex-grow: 1;
+    flex: 1;
     height: 4px;
-    width: 20vw;
+    width: 10vw;
     background-color: var(--accent);
+  }
+
+  .title::before {
+    margin-right: 1rem;
+  }
+
+  .title::after {
+    margin-left: 1rem;
   }
 }

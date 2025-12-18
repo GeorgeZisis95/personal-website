@@ -15,8 +15,8 @@ export default function Skills() {
     <section id="skills" className="skills">
       <h2 className="title">
         <div>
-          <span>My&nbsp;</span>
-          <span style={{ color: "var(--accent)" }}>Skills</span>
+          <span> My&nbsp;</span>
+          <span style={{ color: "var(--accent)" }}>Skills </span>
         </div>
       </h2>
       <div className="skills-container">
