@@ -1,16 +1,44 @@
 .about {
-  padding: 0 0 5vh 4vw;
-  position: relative;
+  padding: 0 2vw 5vh 4vw;
+}
+
+.about img {
+  width: 30%;
+  float: right;
 }
 
 .about p {
   padding-top: 50px;
-  width: 60vw;
+  width: 70vw;
 }
 
-.about img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 30%;
+@media (max-width: 1024px) and (min-width: 770px) {
+  .about p {
+    width: auto;
+  }
+
+  .about img {
+    margin: 3vw 1vw 0 0;
+    width: 50%;
+  }
+}
+
+@media (max-width: 770px) {
+  .about p {
+    width: 100%;
+  }
+
+  .about img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 430px) {
+  .about img {
+    display: none;
+  }
+
+  .about {
+    padding: 0 8vw 5vh 4vw;
+  }
 }

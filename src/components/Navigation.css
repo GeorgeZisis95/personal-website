@@ -70,13 +70,18 @@ nav.scrolled {
     padding: 0 2vw;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid var(--accent);
   }
 
   .logo {
-    display: none;
-    gap: 4px;
-    font-size: 16px;
-    letter-spacing: 0.1em;
+    position: fixed;
+    top: 0;
+    gap: 8px;
+    font-size: 24px;
+    background-color: var(--primary);
+    width: 100%;
+    letter-spacing: 0.2em;
+    border-bottom: 1px solid var(--accent);
   }
 
   .nav-buttons {
@@ -96,7 +101,7 @@ nav.scrolled {
   }
 }
 
-@media (max-width: 768px) and (min-width: 480px) {
+@media (max-width: 1024px) and (min-width: 480px) {
   nav {
     padding: 0 3vw;
   }
