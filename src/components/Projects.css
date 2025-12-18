@@ -82,6 +82,7 @@
 @media (max-width: 430px) {
   .projects {
     padding: 0 2vw 0 2vw;
+    padding-bottom: 100px;
   }
 
   .project-container {
