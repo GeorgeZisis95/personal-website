@@ -46,7 +46,7 @@ function Button({ img, text }) {
     <a href={id} className="button">
       <img src={img} alt={text} />
       <span style={{ color: "var(--heading)" }}>
-        <h3>{text}</h3>
+        <p>{text}</p>
       </span>
     </a>
   );

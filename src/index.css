@@ -37,7 +37,7 @@ h2 {
 h3 {
   all: unset;
   display: block;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   color: var(--heading);
 }
@@ -59,7 +59,7 @@ p {
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   p {
@@ -77,7 +77,7 @@ p {
   }
 
   h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   p {
@@ -95,7 +95,7 @@ p {
   }
 
   h3 {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   p {
@@ -122,6 +122,6 @@ section {
 
 @media (max-width: 480px) {
   section {
-    scroll-margin-top: 10px;
+    scroll-margin-top: 60px;
   }
 }
