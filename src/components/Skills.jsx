@@ -39,7 +39,7 @@ function Card({ img, text }) {
   return (
     <div className="card">
       <img src={img} alt={text} />
-      <span>{text}</span>
+      <p>{text}</p>
     </div>
   );
 }

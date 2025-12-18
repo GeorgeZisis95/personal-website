@@ -5,7 +5,7 @@
   align-items: center;
   gap: 16px;
   text-align: center;
-  padding: 20vh 4vw 40vh 6vw;
+  padding: 10rem 4vw 20rem 6vw;
 }
 
 .about-button {
@@ -43,6 +43,12 @@
 
 @media (max-width: 480px) {
   .home {
-    padding: 30vh 4vw 30vh 4vw;
+    padding: 10rem 4vw 10rem 4vw;
+  }
+}
+
+@media (min-width: 1910px) {
+  .home {
+    padding: 20rem 4vw 30rem 4vw;
   }
 }
