@@ -59,7 +59,7 @@ nav.scrolled {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 430px) {
   nav {
     min-height: 8vh;
     position: fixed;
@@ -88,7 +88,7 @@ nav.scrolled {
     gap: 14vw;
   }
 
-  .nav-buttons h3 {
+  .nav-buttons p {
     display: none;
   }
 
@@ -101,7 +101,7 @@ nav.scrolled {
   }
 }
 
-@media (max-width: 1024px) and (min-width: 480px) {
+@media (max-width: 1024px) and (min-width: 430px) {
   nav {
     padding: 0 3vw;
   }
