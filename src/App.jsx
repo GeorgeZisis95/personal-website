@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
 import Projects from "./components/Projects";
@@ -18,6 +19,7 @@ export default function App() {
       <About aboutRef={aboutRef} />
       <Skills />
       <Projects projectsRef={projectsRef} />
+      <Contact />
     </>
   );
 }

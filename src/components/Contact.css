@@ -1,0 +1,43 @@
+.contact {
+  padding: 0 4vw;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.email-link h3 {
+  font-size: 1.4rem;
+  word-break: break-word; /* prevents overflow */
+}
+
+/* social icon layout */
+.sm-links-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sm-links-buttons img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.sm-links-buttons img:hover {
+  transform: scale(1.1);
+}
+
+/* wider screens */
+@media (min-width: 768px) {
+  .contact-container {
+    text-align: left;
+  }
+}
