@@ -16,18 +16,24 @@ export default function Contact() {
           <p style={{ color: "var(--text)" }}>Write me an e-mail at:</p>
           <h3>georgezisis@gmail.com</h3>
         </div>
-        <p style={{ color: "var(--text)" }}>
+        <p style={{ color: "var(--text)", textAlign: "center" }}>
           Or reach me through social media:
         </p>
         <div className="sm-links-buttons">
           <a href="https://github.com/GeorgeZisis95">
-            <img src={githubImg} alt="github" />
+            <img className="github-image" src={githubImg} alt="github" />
           </a>
           <a href="https://www.linkedin.com/in/george-zisis-front-end/">
-            <img src={linkedinImg} alt="linkedin" />
+            <img className="linkedin-image" src={linkedinImg} alt="linkedin" />
           </a>
         </div>
       </div>
+      <footer className="footer">
+        <div className="line"></div>
+        <p className="footer-content">
+          George Zisis © 2025 — All rights reserved.
+        </p>
+      </footer>
     </section>
   );
 }

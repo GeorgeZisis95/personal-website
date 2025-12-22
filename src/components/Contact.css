@@ -9,25 +9,32 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.email-link {
   text-align: center;
 }
 
 .email-link h3 {
-  font-size: 1.4rem;
-  word-break: break-word; /* prevents overflow */
+  word-break: break-word;
 }
 
-/* social icon layout */
 .sm-links-buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
+.linkedin-image {
+  width: 80px;
+}
+
+.github-image {
+  width: 70px;
+}
+
 .sm-links-buttons img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -35,9 +42,13 @@
   transform: scale(1.1);
 }
 
-/* wider screens */
-@media (min-width: 768px) {
-  .contact-container {
-    text-align: left;
-  }
+.line {
+  width: 100%;
+  height: 4px;
+  background: var(--accent);
+}
+
+.footer-content {
+  text-align: center;
+  padding: 32px 0 64px 0;
 }
