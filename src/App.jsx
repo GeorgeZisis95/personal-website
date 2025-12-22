@@ -9,17 +9,17 @@ import Skills from "./components/Skills";
 import { useRef } from "react";
 
 export default function App() {
-  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
   const projectsRef = useRef(null);
 
   return (
     <>
       <Navigation />
-      <Home aboutRef={aboutRef} projectsRef={projectsRef} />
-      <About aboutRef={aboutRef} />
+      <Home contactRef={contactRef} projectsRef={projectsRef} />
+      <About />
       <Skills />
       <Projects projectsRef={projectsRef} />
-      <Contact />
+      <Contact contactRef={contactRef} />
     </>
   );
 }

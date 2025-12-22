@@ -1,8 +1,8 @@
 import "./Home.css";
 
-export default function Home({ aboutRef, projectsRef }) {
-  const scrollToAbout = () =>
-    aboutRef.current.scrollIntoView({ behavior: "smooth" });
+export default function Home({ contactRef, projectsRef }) {
+  const scrollToContact = () =>
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
   const scrollToProjects = () =>
     projectsRef.current.scrollIntoView({ behavior: "smooth" });
 
@@ -18,8 +18,8 @@ export default function Home({ aboutRef, projectsRef }) {
         user experiences
       </p>
       <div className="buttons">
-        <button onClick={scrollToAbout} className="about-button">
-          <p>Learn More...</p>
+        <button onClick={scrollToContact} className="contact-button">
+          <p>Contact Me</p>
         </button>
         <button onClick={scrollToProjects} className="projects-button">
           <p>My Projects</p>

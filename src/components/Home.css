@@ -8,7 +8,7 @@
   padding: 10rem 4vw 20rem 6vw;
 }
 
-.about-button {
+.contact-button {
   color: var(--heading);
   border: 1px solid var(--accent);
   padding: 8px 16px;
@@ -16,7 +16,7 @@
   transition: all 0.2s ease-in;
 }
 
-.about-button:hover {
+.contact-button:hover {
   border: 1px solid var(--tertiary);
 }
 

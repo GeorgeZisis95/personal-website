@@ -2,9 +2,9 @@ import "./Contact.css";
 import githubImg from "../assets/github.svg";
 import linkedinImg from "../assets/linkedin.svg";
 
-export default function Contact() {
+export default function Contact({ contactRef }) {
   return (
-    <section id="contact" className="contact">
+    <section ref={contactRef} id="contact" className="contact">
       <h2 className="title">
         <div>
           <span style={{ color: "var(--accent)" }}>Contact&nbsp;</span>
